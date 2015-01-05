@@ -26,7 +26,7 @@ class MessagesViewController: JSQMessagesViewController {
 
     func setupFirebase() {
         // *** STEP 2: SETUP FIREBASE
-        messagesRef = Firebase(url: "https://swift-chat.firebaseio.com/messages")
+        messagesRef = Firebase(url: "https://chat-swift.firebaseio.com/messages")
 
         // *** STEP 4: RECEIVE MESSAGES FROM FIREBASE
         messagesRef.observeEventType(FEventType.ChildAdded, withBlock: { (snapshot) in
